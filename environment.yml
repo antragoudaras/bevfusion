@@ -1,4 +1,4 @@
-name: bevfusion-env
+name: null
 
 channels:
   - conda-forge
@@ -7,7 +7,7 @@ dependencies:
   - python>=3.8, <3.9
   - openmpi=4.0.4
   - mpi4py=3.0.3
-  - cudatoolkit-dev=11.3.1
+  - cudatoolkit-dev=11.3
   - gcc_linux-64=9.3.0
   - gxx_linux-64=9.3.0
   - pip
@@ -19,3 +19,4 @@ variables:
   CUDA_HOME: "'$CONDA_PREFIX'"
   XLA_FLAGS: "'--xla_gpu_cuda_data_dir=$CONDA_PREFIX/lib/'"
   PYTHONPATH: "'${PYTHONPATH}:/home/tragoua/bevfusion/nuscenes-devkit/python-sdk'"
+  OMPI_MCA_opal_cuda_support: "'true'"
