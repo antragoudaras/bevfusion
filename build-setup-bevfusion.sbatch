@@ -15,7 +15,7 @@ module purge
 
 conda activate ./env
 
-# python setup.py develop
+python setup.py develop
 
 mkdir -p ./data/nuscenes
 wget https://www.nuscenes.org/data/v1.0-mini.tgz
