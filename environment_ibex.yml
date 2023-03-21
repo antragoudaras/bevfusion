@@ -19,5 +19,5 @@ variables:
   LD_LIBRARY_PATH: "'$LD_LIBRARY_PATH:$CONDA_PREFIX/lib/'"
   CUDA_HOME: "'$CONDA_PREFIX'"
   XLA_FLAGS: "'--xla_gpu_cuda_data_dir=$CONDA_PREFIX/lib/'"
-  PYTHONPATH: "'${PYTHONPATH}:/ibex/scratch/tragoua/bevfusion/nuscenes-devkit/python-sdk'"
+  PYTHONPATH: "'${PYTHONPATH}:/ibex/ai/home/tragoua/bevfusion/nuscenes-devkit/python-sdk'"
   OMPI_MCA_opal_cuda_support: "'true'"
