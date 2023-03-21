@@ -1,10 +1,11 @@
 #!/bin/bash --login
 #SBATCH --time=2:00:00
 #SBATCH --nodes=1
-#SBATCH --gpus-per-node=v100:1
+#SBATCH --gpus-per-node=a100:1
 #SBATCH --cpus-per-gpu=2 
 #SBATCH --mem=16G 
 #SBATCH --constraint=intel
+#SBATCH --reservation=A100
 #SBATCH --partition=batch
 #SBATCH --mail-type=ALL
 #SBATCH --output=./%x-%j-slurm.out
