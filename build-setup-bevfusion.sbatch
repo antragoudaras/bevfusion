@@ -7,7 +7,6 @@
 #SBATCH --time=02:00:00
 #SBATCH --constraint=intel
 #SBATCH --reservation=A100
-#SBATCH --partition=batch
 #SBATCH --mail-type=ALL
 #SBATCH --output=./%x-%j-slurm.out
 #SBATCH --error=./%x-%j-slurm.err
