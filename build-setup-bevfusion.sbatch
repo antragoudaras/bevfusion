@@ -5,7 +5,6 @@
 #SBATCH --ntasks=1
 #SBATCH --nodes=1
 #SBATCH --time=02:00:00
-#SBATCH --constraint=intel
 #SBATCH --reservation=A100
 #SBATCH --mail-type=ALL
 #SBATCH --output=./%x-%j-slurm.out
