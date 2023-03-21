@@ -1,10 +1,11 @@
 #!/bin/bash --login
-#SBATCH --time=2:00:00
-#SBATCH --gres=gpu:a100:1
+#SBATCH --gpus=1
+#SBATCH --gpus-per-node=1
 #SBATCH --cpus-per-task=4
 #SBATCH --ntasks=1
 #SBATCH --nodes=1
-#SBATCH --time=02:00:00
+#SBATCH --time=01:30:00
+#SBATCH --constraint=a100
 #SBATCH --reservation=A100
 #SBATCH --mail-type=ALL
 #SBATCH --output=./%x-%j-slurm.out
