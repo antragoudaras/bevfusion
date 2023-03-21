@@ -10,4 +10,6 @@ conda activate $ENV_PREFIX
 mim install mmcv==1.4.0
 mim install mmcv-full==1.4.0
 pip install mmdet==2.20.0
-git clone https://github.com/nutonomy/nuscenes-devkit.git nuscenes-devkit && cd nuscenes-devkit && pip install -r setup/requirements.txt
+git clone https://github.com/nutonomy/nuscenes-devkit.git nuscenes-devkit
+cd nuscenes-devkit
+pip install -r setup/requirements.txt
