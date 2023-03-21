@@ -134,3 +134,4 @@ data/
 /.vscode
 v1.0-*
 *-map-expansion-*
+read_results_*
