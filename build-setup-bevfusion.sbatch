@@ -4,6 +4,7 @@
 #SBATCH --cpus-per-task=4
 #SBATCH --ntasks=1
 #SBATCH --nodes=1
+#SBATCH --mem=64G
 #SBATCH --time=01:30:00
 #SBATCH --constraint=a100
 #SBATCH --reservation=A100
