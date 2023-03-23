@@ -1,5 +1,6 @@
 #!/bin/bash
 
+#SBATCH --job-name=ineractive-a100-session
 #SBATCH --gpus=1
 #SBATCH --gpus-per-node=1
 #SBATCH --cpus-per-task=4
@@ -9,6 +10,8 @@
 #SBATCH --time=01:00:00
 #SBATCH --constraint=a100
 #SBATCH --reservation=A100
+#SBATCH --output=./%x-%j-slurm.out
+#SBATCH --error=./%x-%j-slurm.err
 
 source $HOME/miniconda3/bin/activate ./env
 
