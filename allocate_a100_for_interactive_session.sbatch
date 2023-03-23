@@ -10,8 +10,6 @@
 #SBATCH --time=01:00:00
 #SBATCH --constraint=a100
 #SBATCH --reservation=A100
-#SBATCH --output=./%x-%j-slurm.out
-#SBATCH --error=./%x-%j-slurm.err
 
 source $HOME/miniconda3/bin/activate ./env
 
