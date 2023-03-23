@@ -20,7 +20,7 @@ export CODE_SERVER_CONFIG=~/.config/code-server/config.yaml
 export XDG_CONFIG_HOME=$HOME/tmpdir
 node=$(/bin/hostname)
 port=10121
-user=$(tragoua) 
+user=tragoua 
 submit_host=${SLURM_SUBMIT_HOST} 
 
 if [ -f ${CODE_SERVER_CONFIG} ] ; then
