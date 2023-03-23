@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#SBATCH --job-name=ineractive-a100-session
+#SBATCH --job-name=interactive-a100-session
 #SBATCH --gpus=1
 #SBATCH --gpus-per-node=1
 #SBATCH --cpus-per-task=4
@@ -21,7 +21,7 @@ export XDG_CONFIG_HOME=$HOME/tmpdir
 node=$(/bin/hostname)
 port=10121
 user=tragoua 
-submit_host=${SLURM_SUBMIT_HOST} 
+submit_host=glogin
 
 if [ -f ${CODE_SERVER_CONFIG} ] ; then
  rm ${CODE_SERVER_CONFIG}
