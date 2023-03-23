@@ -17,7 +17,6 @@ source $HOME/miniconda3/bin/activate ./env
 
 
 export CODE_SERVER_CONFIG=~/.config/code-server/config.yaml
-export XDG_CONFIG_HOME=$HOME/tmpdir
 node=$(/bin/hostname)
 port=10121
 user=tragoua 
@@ -28,9 +27,9 @@ if [ -f ${CODE_SERVER_CONFIG} ] ; then
 fi
 
 echo "bind-addr: ${node}:${port}" >> $CODE_SERVER_CONFIG 
-echo "auth: password" >> config
+echo "auth: password" >> $CODE_SERVER_CONFIG
 echo "password: qwerty1234!" >> $CODE_SERVER_CONFIG
-echo "cert: false" >> config
+echo "cert: false" >> $CODE_SERVER_CONFIG
 
 echo "Copy the following line in a new terminal to create a secure SSH tunnel between your computer and Ibex compute node."
 echo "ssh -L localhost:${port}:${node}:${port} ${user}@${submit_host}.ibex.kaust.edu.sa"
