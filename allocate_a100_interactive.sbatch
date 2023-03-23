@@ -1,6 +1,5 @@
 #!/bin/bash
 
-#SBATCH --time=00:10:00
 #SBATCH --gpus=1
 #SBATCH --gpus-per-node=1
 #SBATCH --cpus-per-task=4
