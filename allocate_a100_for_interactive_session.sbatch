@@ -1,6 +1,5 @@
 #!/bin/bash
 
-#SBATCH --job-name=interactive-a100-session
 #SBATCH --gpus=1
 #SBATCH --gpus-per-node=1
 #SBATCH --cpus-per-task=4
