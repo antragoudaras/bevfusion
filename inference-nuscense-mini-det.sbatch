@@ -17,5 +17,6 @@ module purge
 
 conda activate ./env
 
-# torchpack dist-run -np 1 -v python tools/test.py configs/nuscenes/det/transfusion/secfpn/camera+lidar/swint_v0p075/convfuser.yaml pretrained/bevfusion-det.pth --eval bbox --out results-det-bev.pkl
+# torchpack dist-run -np 1 python tools/test.py configs/nuscenes/det/transfusion/secfpn/camera+lidar/swint_v0p075/convfuser.yaml pretrained/bevfusion-det.pth --eval "bbox"
+# srun --gpus=1 --gpus-per-node=1 --cpus-per-task=4 --ntasks=1 --nodes=1 --mem=32G --time=01:00:00 --constraint=a100 --reservation=A100 --pty bash
 torchpack dist-run -np 1 python tools/test.py configs/nuscenes/det/transfusion/secfpn/camera+lidar/swint_v0p075/convfuser.yaml pretrained/bevfusion-det.pth --eval 'bbox' --out 'camera_lidar_bev_det.pkl' --eval-options 'show=False' 'out_dir=results_camera_lidar_bev'
