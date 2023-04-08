@@ -8,9 +8,10 @@ dependencies:
   - openmpi=4.0.4
   - mpi4py=3.0.3
   - cudatoolkit-dev=11.3
-  - code-server
+  - code-server=4.1.0
   - gcc_linux-64=9.3.0
   - gxx_linux-64=9.3.0
+  - openssl=3.1.0
   - pip
   - pip:
     - -r requirements.txt
